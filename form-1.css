@@ -2,111 +2,105 @@
   font-family: "游ゴシック","arial unicode ms",sans-serif;
 }
 
-
 html {
   font-size: 12pt;
-}
-
-.line {
-  width: 100%;
-  border: 1px solid;
-  margin-bottom: 40px;
 }
 
 body {
   background: #Ebba4e;
 }
 
-.lead-form {
- margin-bottom: 0px;
-}
-
-.main-title {
- margin-top: 0px;
- margin-bottom: 40px;
-}
-
 .inner {
   width: 860px;
   margin: 0 auto;
+  min-width: 860px;
+}
+
+.header .header_title {
   text-align: center;
 }
 
-.flex-container {
-  margin-left: 70px;
-  margin-right: auto;
+.lead-form {
+ margin: 0;
+ font-size: 1em;
 }
 
-th {
-  vertical-align: text-top;
-  text-align: end;
+.main-title {
+ font-size: 1.5em;
+ margin: 0;
 }
 
+.main {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 2px solid;
+}
 
 /* フォームのデザイン */
 
-.inner input, .inner textarea {
-  width: 170%;
+.flex-container {
+  margin: 0 auto;
+  width: 80%;
+  margin-left: -5%;
+}
+
+.flex-container th {
+  text-align: right;
+  vertical-align: top;
+
+  margin-bottom: 20px;
+  padding-top: 0.3em;
+}
+
+.flex-container th,
+.flex-container td {
+  padding-bottom: 20px;
+}
+
+.flex-container input[type=text],
+.flex-container input[type=tel],
+.flex-container input[type=email],
+.flex-container textarea {
+  width: 100%;
   border: none;
   border-radius: 7px;
   box-sizing: border-box;
   padding: 10px;
 }
 
-#type {
-  width: 170%;
+.flex-container select {
+  width: 100%;
   border: none;
   border-radius: 5px;
   padding: 5px;
-  margin-bottom: 20px;
 }
 
-#urgent {
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 100px;
-}
-
-
-.inner input::placeholder, .inner textarea::placeholder {
-  color:#aaa;
-}
- 
-.inner input {
+.flex-container input,
+.flex-container select {
   height: 30px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-  
 }
 
-.inner textarea {
-  margin-bottom: 20px;
-  resize: none;
-}
-
-input[type=checkbox] {
-  margin: 0 0 0 -225px;
+.flex-container input[type=checkbox] {
+  height: 25px;
   width: 20px;
-  height: 20px;
 }
-
 
 /* ボタンセクション */
 .btn-area {
   width: 418px;
-  margin: 0 auto;
+  margin: 20px auto;
   display: flex;
   justify-content: space-around;
 }
 
 .clear {
-  margin-top: 5px;
-  padding: 8px 16px;
   border-radius: 23px;
   background-color: rgb(196, 196, 196);
+  padding: 10px 20px;
  }
 
- .clear:hover {
+ .clear:hover,
+ .sent:hover  {
   transform: scale(1.1, 1.1);
  }
 
@@ -123,9 +117,6 @@ input[type=checkbox] {
   color: inherit;
 }
 
-.sent:hover {
-  transform: scale(1.1, 1.1);
-}
 
 
 
